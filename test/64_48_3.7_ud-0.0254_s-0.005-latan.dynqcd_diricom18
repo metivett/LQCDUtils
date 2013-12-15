@@ -1,0 +1,29 @@
+Performing GEVP analysis with :
+File /home/thibaut/workspace/RhoPiPi/data/64_48_3.7_ud-0.0254_s-0.005/latan.dynqcd_diricom18/latan.list
+t0 = 7
+nBoot = 2000
+L = 48
+type COM
+
+
+Results :
+
+GEVP analysis : 
+tf = 14
+Rho1 #0 : 0.155821 (0.471514 GeV) +- 0.00364607 (0.011033 GeV)
+Rho1 #1 : 0.277926 (0.841003 GeV) +- 0.0298353 (0.0902817 GeV)
+
+Rho analysis : 
+tf = 15
+E_MV = 0.27236 (0.824162 GeV) +- 0.0320612 (0.0970173 GeV)
+E_COM = 0.253212 (0.766219 GeV) +- 0.0162174 (0.0490738 GeV)
+
+Pion analysis : 
+tf = 15
+E_MV = 0.16064 (0.486098 GeV) +- 0.00253507 (0.00767111 GeV)
+E_COM = 0.0928761 (0.281043 GeV) +- 0.00068754 (0.0020805 GeV)
+
+Coupling parameters : 
+g = 30.3692 +- 63.4902
+Mrho = 0.155821 (0.471514 GeV) +- 0.00364607 (0.011033 GeV)
+

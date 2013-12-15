@@ -1,0 +1,28 @@
+/*
+ * GEVPFitModels.hpp
+ *
+ *  Created on: Jul 01, 2013
+ *      Author: Thibaut Metivet
+ */
+
+#ifndef GEVP_FIT_MODELS_HPP_
+#define GEVP_FIT_MODELS_HPP_
+
+#include "LQCDA.hpp"
+
+class PlateauFitModel : public LQCDA::FitModel<double, double>
+{
+public:
+double operator() (const double& x, const std::vector<double>& params) const {
+assert(params.size() == 2);
+double E = params[0];
+double m = params[1];
+return std::exp(- E * x) + m;
+}
+
+unsigned int NbOfParameters() const { return 2; }
+unsigned int XDim() const { return 1; }
+unsigned int YDim() const { return 1; }
+};
+
+#endif	// GEVP_FIT_MODELS_HPP_
